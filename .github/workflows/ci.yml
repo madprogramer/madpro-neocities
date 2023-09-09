@@ -17,7 +17,7 @@ jobs:
         uses: bcomnes/deploy-to-neocities@v1
         with:
           api_token: ${{ secrets.NEOCITIES_API_KEY }}
-          dist_dir: _site
+          dist_dir: _site #Have to do it this way because .template is unrecognized
           cleanup: true
 
       - name: Deploy to Neocities fallback
